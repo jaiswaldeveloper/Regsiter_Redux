@@ -7,8 +7,9 @@ const Home = () => {
 const dispatch = useDispatch()
 const navigate = useNavigate();
 
-// Access the user object from the state
-const user = useSelector((store) => store.user.user[0]); // Access the first user in the array
+
+const user = useSelector((store) => store.user.user[0]) ;
+
 // console.log("state in Home component:", user);
 
 // Check if user object is not empty and has a name property

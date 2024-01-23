@@ -4,7 +4,7 @@ const initalstate = {
     error : null
 }
 
-const userReducers = (state = initalstate, action )=>{
+const userReducers = (state = initalstate, action ) =>{
     console.log('Reducer Action:', action);
 
     switch (action.type) {
@@ -26,6 +26,7 @@ const userReducers = (state = initalstate, action )=>{
             }
         
         case "LOGOUT_SUCCESS":
+
             return {
                 user: [],
                 error: null,
